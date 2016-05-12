@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dynamic Forecasting R and PBI", "Dynamic Forecasting R and PBI", "{F818AE06-AAC6-46EB-8869-A197681813E2}"
+Project("{DA7A21FA-8162-4350-AD77-A8D1B671F3ED}") = "Blog", "Blog\Blog.rxproj", "{E2755B80-80F5-4AC6-85E1-51BE2DECBA68}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dynamic Forecasting R and PBI", "Dynamic Forecasting R and PBI", "{4C21998B-7C47-4E21-9FB2-AA7AFB1C5A05}"
 	ProjectSection(SolutionItems) = preProject
-		..\..\..\..\Downloads\DynamicForecastingwRPBI.zip = ..\..\..\..\Downloads\DynamicForecastingwRPBI.zip
+		Dynamic Forecasting R and PBI\DynamicForecastingwRPBI.zip = Dynamic Forecasting R and PBI\DynamicForecastingwRPBI.zip
 	EndProjectSection
 EndProject
 Global
