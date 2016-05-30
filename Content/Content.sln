@@ -10,6 +10,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dynamic Forecasting R and P
 		Dynamic Forecasting R and PBI\DynamicForecastingwRPBI.zip = Dynamic Forecasting R and PBI\DynamicForecastingwRPBI.zip
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HDInsight Provision Automation", "HDInsight Provision Automation", "{04175343-2B03-4965-88A9-529BD2516612}"
+	ProjectSection(SolutionItems) = preProject
+		HDInsight Provision Automation\HDI Powershell Scripts\CreateCluster-AzureAutomation.ps1 = HDInsight Provision Automation\HDI Powershell Scripts\CreateCluster-AzureAutomation.ps1
+		HDInsight Provision Automation\HDI Powershell Scripts\CreateCluster.ps1 = HDInsight Provision Automation\HDI Powershell Scripts\CreateCluster.ps1
+		HDInsight Provision Automation\HDI Powershell Scripts\DeleteCluster-AzureAutomation.ps1 = HDInsight Provision Automation\HDI Powershell Scripts\DeleteCluster-AzureAutomation.ps1
+		HDInsight Provision Automation\HDI Powershell Scripts\DeleteCluster.ps1 = HDInsight Provision Automation\HDI Powershell Scripts\DeleteCluster.ps1
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
