@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dynamic Forecasting R and PBI", "Dynamic Forecasting R and PBI", "{1AD89770-3328-4ADC-BA2E-12B04F627F3D}"
+	ProjectSection(SolutionItems) = preProject
+		Dynamic Forecasting R and PBI\DynamicForecastingwRPBI.zip = Dynamic Forecasting R and PBI\DynamicForecastingwRPBI.zip
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HDInsight Provision Automation", "HDInsight Provision Automation", "{BD57D9F4-974A-49C2-99F7-FAE7AEA7A935}"
+	ProjectSection(SolutionItems) = preProject
+		HDInsight Provision Automation\CreateCluster-AzureAutomation.ps1 = HDInsight Provision Automation\CreateCluster-AzureAutomation.ps1
+		HDInsight Provision Automation\CreateCluster.ps1 = HDInsight Provision Automation\CreateCluster.ps1
+		HDInsight Provision Automation\DeleteCluster-AzureAutomation.ps1 = HDInsight Provision Automation\DeleteCluster-AzureAutomation.ps1
+		HDInsight Provision Automation\DeleteCluster.ps1 = HDInsight Provision Automation\DeleteCluster.ps1
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
