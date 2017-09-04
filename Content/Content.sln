@@ -20,19 +20,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HDI Spark and ADF", "HDI Sp
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Pyspark Scripts", "Pyspark Scripts", "{D324844E-900E-4F77-8D76-9CBED3856999}"
 	ProjectSection(SolutionItems) = preProject
-		HDI Spark and ADF\pysparkArgs.py = HDI Spark and ADF\pysparkArgs.py
-		HDI Spark and ADF\pysparkSimple.py = HDI Spark and ADF\pysparkSimple.py
+		HDI Spark and ADF\Pyspark Scripts\pysparkArgs.py = HDI Spark and ADF\Pyspark Scripts\pysparkArgs.py
+		HDI Spark and ADF\Pyspark Scripts\pysparkSimple.py = HDI Spark and ADF\Pyspark Scripts\pysparkSimple.py
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data Factory Objects", "Data Factory Objects", "{7DCFA365-F359-4029-A410-F6ACE4FD4C0C}"
 	ProjectSection(SolutionItems) = preProject
-		ds_hvacsource.json = ds_hvacsource.json
-		ds_sparkargsoutput.json = ds_sparkargsoutput.json
-		ds_sparksimpleoutput.json = ds_sparksimpleoutput.json
-		ls_azstore_storageaccount.json = ls_azstore_storageaccount.json
-		ls_hdi_cluster.json = ls_hdi_cluster.json
-		pipe_sparkargs.json = pipe_sparkargs.json
-		pipe_sparksimple.json = pipe_sparksimple.json
+		HDI Spark and ADF\Data Factory Objects\ds_hvacsource.json = HDI Spark and ADF\Data Factory Objects\ds_hvacsource.json
+		HDI Spark and ADF\Data Factory Objects\ds_sparkargsoutput.json = HDI Spark and ADF\Data Factory Objects\ds_sparkargsoutput.json
+		HDI Spark and ADF\Data Factory Objects\ds_sparksimpleoutput.json = HDI Spark and ADF\Data Factory Objects\ds_sparksimpleoutput.json
+		HDI Spark and ADF\Data Factory Objects\ls_azstore_storageaccount.json = HDI Spark and ADF\Data Factory Objects\ls_azstore_storageaccount.json
+		HDI Spark and ADF\Data Factory Objects\ls_hdi_cluster.json = HDI Spark and ADF\Data Factory Objects\ls_hdi_cluster.json
+		HDI Spark and ADF\Data Factory Objects\pipe_sparkargs.json = HDI Spark and ADF\Data Factory Objects\pipe_sparkargs.json
+		HDI Spark and ADF\Data Factory Objects\pipe_sparksimple.json = HDI Spark and ADF\Data Factory Objects\pipe_sparksimple.json
 	EndProjectSection
 EndProject
 Global
