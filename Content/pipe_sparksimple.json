@@ -1,0 +1,33 @@
+{
+  "name": "pipe_sparksimple",
+  "properties": {
+    "description": "This pipeline executes the pysparksimple.py script",
+    "activities": [
+      {
+        "type": "HDInsightSpark",
+        "typeProperties": {
+          "rootPath": "#containername#\\scripts",
+          "entryFilePath": "pysparkSimple.py"
+        },
+        "inputs": [
+          {
+            "name": "ds_hvacsource"
+          }
+        ],
+        "outputs": [
+          {
+            "name": "ds_sparksimpleoutput"
+          }
+        ],
+        "scheduler": {
+          "frequency": "Day",
+          "interval": 1
+        },
+        "name": "SparkActivityTemplate",
+        "linkedServiceName": "ls_hdi_cluster"
+      }
+    ],
+    "start": "2017-08-24T00:00:00Z",
+    "end": "2017-08-25T00:00:00Z"
+  }
+}

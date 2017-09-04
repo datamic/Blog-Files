@@ -1,0 +1,15 @@
+{
+  "name": "ds_sparksimpleoutput",
+  "properties": {
+    "published": false,
+    "type": "AzureBlob",
+    "linkedServiceName": "ls_azstore_storageaccount",
+    "typeProperties": {
+      "folderPath": "#containername#/output/AvgTempByDay"
+    },
+    "availability": {
+      "frequency": "Day",
+      "interval": 1
+    }
+  }
+}

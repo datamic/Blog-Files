@@ -17,13 +17,30 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HDInsight Provision Automat
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HDI Spark and ADF", "HDI Spark and ADF", "{DDE69C35-57EB-45DD-8BD2-70D4B3E8F03A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Pyspark Scripts", "Pyspark Scripts", "{D324844E-900E-4F77-8D76-9CBED3856999}"
 	ProjectSection(SolutionItems) = preProject
 		HDI Spark and ADF\pysparkArgs.py = HDI Spark and ADF\pysparkArgs.py
 		HDI Spark and ADF\pysparkSimple.py = HDI Spark and ADF\pysparkSimple.py
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data Factory Objects", "Data Factory Objects", "{7DCFA365-F359-4029-A410-F6ACE4FD4C0C}"
+	ProjectSection(SolutionItems) = preProject
+		ds_hvacsource.json = ds_hvacsource.json
+		ds_sparkargsoutput.json = ds_sparkargsoutput.json
+		ds_sparksimpleoutput.json = ds_sparksimpleoutput.json
+		ls_azstore_storageaccount.json = ls_azstore_storageaccount.json
+		ls_hdi_cluster.json = ls_hdi_cluster.json
+		pipe_sparkargs.json = pipe_sparkargs.json
+		pipe_sparksimple.json = pipe_sparksimple.json
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D324844E-900E-4F77-8D76-9CBED3856999} = {DDE69C35-57EB-45DD-8BD2-70D4B3E8F03A}
+		{7DCFA365-F359-4029-A410-F6ACE4FD4C0C} = {DDE69C35-57EB-45DD-8BD2-70D4B3E8F03A}
 	EndGlobalSection
 EndGlobal

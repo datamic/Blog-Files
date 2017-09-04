@@ -1,17 +1,16 @@
 from pyspark.sql import SparkSession
 
 spark = SparkSession.builder \
-     .master("local")\
-     .appName("SparkonADF")\
+     .appName("SparkonADF - with Args")\
      .enableHiveSupport()\
      .getOrCreate()
 
 from pyspark.sql.functions import *
-import sys
+import sys #Necessary for arguments
 
 
 # Read in HVAC file(s)
-df0 = spark.read.csv('wasb://theflashr-hdi@herostore001.blob.core.windows.net/HdiSamples/HdiSamples/SensorSampleData/hvac', header = True, inferSchema = True)
+df0 = spark.read.csv('wasb://#containername#@#storageaccount#.blob.core.windows.net/HdiSamples/HdiSamples/SensorSampleData/hvac', header = True, inferSchema = True)
 
 # Get avg temp by date and buildingID filtered by arg1
 df1 = df0.select(
@@ -24,7 +23,7 @@ df1 = df0.select(
         .groupBy('Date', 'BuildingId') \
         .avg('ActualTemp') \
         .filter(col('Date') == sys.argv[1]) \
-        .show()
+
 
 #Write results to CSV
-df2 = df1.repartition(1).write.csv('wasb://theflashr-hdi@herostore001.blob.core.windows.net/output/AvgTempBuildingDay/' + sys.argv[1], header = True, mode = 'overwrite')
+df1.repartition(1).write.csv('wasb://#containername#@#storageaccount#.blob.core.windows.net/output/AvgTempBuildingDay/Date=' + sys.argv[1], header = True, mode = 'overwrite')

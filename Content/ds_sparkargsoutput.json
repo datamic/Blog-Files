@@ -1,0 +1,41 @@
+{
+  "name": "ds_sparkargsoutput",
+  "properties": {
+    "published": false,
+    "type": "AzureBlob",
+    "linkedServiceName": "ls_azstore_storageaccount",
+    "typeProperties": {
+      "folderPath": "#containername#/output/AvgTempBuildingDay/Date={Year}-{Month}-{Day}",
+      "partitionedBy": [
+        {
+          "name": "Year",
+          "value": {
+            "type": "DateTime",
+            "date": "SliceStart",
+            "format": "yyyy"
+          }
+        },
+        {
+          "name": "Month",
+          "value": {
+            "type": "DateTime",
+            "date": "SliceStart",
+            "format": "MM"
+          }
+        },
+        {
+          "name": "Day",
+          "value": {
+            "type": "DateTime",
+            "date": "SliceStart",
+            "format": "dd"
+          }
+        }
+      ]
+    },
+    "availability": {
+      "frequency": "Day",
+      "interval": 1
+    }
+  }
+}

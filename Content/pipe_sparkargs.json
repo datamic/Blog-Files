@@ -1,0 +1,37 @@
+{
+  "name": "pipe_sparkargs",
+  "properties": {
+    "description": "This pipeline executes the pysparkArgs script",
+    "activities": [
+      {
+        "type": "HDInsightSpark",
+        "typeProperties": {
+          "rootPath": "#containername#\\scripts",
+          "entryFilePath": "pysparkArgs.py",
+          "arguments": [
+            "$$Text.Format('{0:yyyy-MM-dd}', SliceStart)"
+          ],
+          "getDebugInfo": "Always"
+        },
+        "inputs": [
+          {
+            "name": "ds_hvacsource"
+          }
+        ],
+        "outputs": [
+          {
+            "name": "ds_sparkargsoutput"
+          }
+        ],
+        "scheduler": {
+          "frequency": "Day",
+          "interval": 1
+        },
+        "name": "SparkActivityTemplate",
+        "linkedServiceName": "ls_hdi_cluster"
+      }
+    ],
+    "start": "2013-06-10T00:00:00Z",
+    "end": "2013-06-19T00:00:00Z"
+  }
+}

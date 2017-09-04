@@ -1,0 +1,13 @@
+{
+  "name": "ls_hdi_cluster",
+  "properties": {
+    "description": "",
+    "type": "HDInsight",
+    "typeProperties": {
+      "clusterUri": "https://#clustername#.azurehdinsight.net",
+      "userName": "#clusteruser#",
+      "password": "#clusterpassword#",
+      "linkedServiceName": "ls_azstore_storageaccount"
+    }
+  }
+}

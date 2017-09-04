@@ -1,0 +1,17 @@
+{
+  "name": "ds_hvacsource",
+  "properties": {
+    "published": false,
+    "type": "AzureBlob",
+    "linkedServiceName": "ls_azstore_storageaccount",
+    "typeProperties": {
+      "folderPath": "#containername#/HdiSamples/HdiSamples/SensorSampleData/hvac"
+    },
+    "availability": {
+      "frequency": "Day",
+      "interval": 1
+    },
+    "external": true,
+    "policy": {}
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "ls_azstore_storageaccount",
+  "properties": {
+    "description": "",
+    "type": "AzureStorage",
+    "typeProperties": {
+      "connectionString": "DefaultEndpointsProtocol=https;AccountName=#accountname#;AccountKey=#accountKey#"
+    }
+  }
+}
