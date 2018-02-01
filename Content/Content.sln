@@ -35,6 +35,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data Factory Objects", "Dat
 		HDI Spark and ADF\Data Factory Objects\pipe_sparksimple.json = HDI Spark and ADF\Data Factory Objects\pipe_sparksimple.json
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Azure Databricks with SQL DW", "Azure Databricks with SQL DW", "{293CC475-39C8-44A4-B749-E9A21A2198B8}"
+	ProjectSection(SolutionItems) = preProject
+		Azure Databricks with SQL DW\AzureDatabricksWithSQLDW.dbc = Azure Databricks with SQL DW\AzureDatabricksWithSQLDW.dbc
+		Azure Databricks with SQL DW\AzureDatabricksWithSQLDW.html = Azure Databricks with SQL DW\AzureDatabricksWithSQLDW.html
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
